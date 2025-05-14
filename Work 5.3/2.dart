@@ -3,80 +3,80 @@ import 'dart:io';
 void main() {
   int lang, seva, service;
 
-  stdout.write("Press 1 for English");
-  stdout.write("Press 2 for Hindi");
-  stdout.write("Press 3 for Gujarati");
-  stdout.write("Enter your choice: ");
+  print("Press 1 for English");
+  print("Press 2 for Hindi");
+  print("Press 3 for Gujarati");
+  print("Enter your choice: ");
   lang = int.parse(stdin.readLineSync()!);
 
   switch (lang) {
     case 1:
-      stdout.write("\nPress 1 for Internet Recharge");
-      stdout.write("Press 2 for Top-up Recharge");
-      stdout.write("Press 3 for Special Recharge");
-      stdout.write("Enter your choice: ");
+      print("\nPress 1 for Internet Recharge");
+      print("Press 2 for Top-up Recharge");
+      print("Press 3 for Special Recharge");
+      print("Enter your choice: ");
       service = int.parse(stdin.readLineSync()!);
 
       switch (service) {
         case 1:
-          stdout.writeln("You have successfully done an Internet Recharge.");
+          print("You have successfully done an Internet Recharge.");
           break;
         case 2:
-          stdout.writeln("You have successfully done a Top-up Recharge.");
+          print("You have successfully done a Top-up Recharge.");
           break;
         case 3:
-          stdout.writeln("You have successfully done a Special Recharge.");
+          print("You have successfully done a Special Recharge.");
           break;
         default:
-          stdout.writeln("Invalid service choice.");
+          print("Invalid service choice.");
       }
       break;
 
     case 2:
-      stdout.write("\nInternet Recharge ke liye 1 dabaiye");
-      stdout.write("Top-up Recharge ke liye 2 dabaiye");
-      stdout.write("Special Recharge ke liye 3 dabaiye");
-      stdout.write("Enter your choice: ");
+      print("\nInternet Recharge ke liye 1 dabaiye");
+      print("Top-up Recharge ke liye 2 dabaiye");
+      print("Special Recharge ke liye 3 dabaiye");
+      print("Enter your choice: ");
       seva = int.parse(stdin.readLineSync()!);
 
       switch (seva) {
         case 1:
-          stdout.writeln("Aapne safaltapurvak Internet Recharge kar liya he.");
+          print("Aapne safaltapurvak Internet Recharge kar liya he.");
           break;
         case 2:
-          stdout.writeln("Aapne safaltapurvak Top-up Recharge kar liya he.");
+          print("Aapne safaltapurvak Top-up Recharge kar liya he.");
           break;
         case 3:
-          stdout.writeln("Aapne safaltapurvak Special Recharge kar liya he.");
+          print("Aapne safaltapurvak Special Recharge kar liya he.");
           break;
         default:
-          stdout.writeln("Seva chayan galat hai.");
+          print("Seva chayan galat hai.");
       }
       break;
 
     case 3:
-      stdout.write("\nInternet Recharge mate 1 dabavo");
-      stdout.write("Top-up Recharge mate 2 dabavo");
-      stdout.write("Special Recharge mate 3 dabavo");
-      stdout.write("Enter your choice: ");
+      print("\nInternet Recharge mate 1 dabavo");
+      print("Top-up Recharge mate 2 dabavo");
+      print("Special Recharge mate 3 dabavo");
+      print("Enter your choice: ");
       seva = int.parse(stdin.readLineSync()!);
 
       switch (seva) {
         case 1:
-          stdout.writeln("Tame safaltapurvak Internet Recharge karyu chhe.");
+          print("Tame safaltapurvak Internet Recharge karyu chhe.");
           break;
         case 2:
-          stdout.writeln("Tame safaltapurvak Top-up Recharge karyu chhe.");
+          print("Tame safaltapurvak Top-up Recharge karyu chhe.");
           break;
         case 3:
-          stdout.writeln("Tame safaltapurvak Special Recharge karyu chhe.");
+          print("Tame safaltapurvak Special Recharge karyu chhe.");
           break;
         default:
-          stdout.writeln("Galat seva chayan.");
+          print("Galat seva chayan.");
       }
       break;
 
     default:
-      stdout.writeln("Invalid language choice.");
+      print("Invalid language choice.");
   }
 }
