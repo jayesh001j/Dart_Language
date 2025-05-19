@@ -1,10 +1,21 @@
-void main  (){
-  int a = 5;
-  int b = 10;
-  print('Before swapping: a = $a, b = $b');
+import 'dart:io';
+
+void main (){
+
+
+  int a , b , c ;
+
+  stdout.write("Enter Value a : ");
+  a = int.parse(stdin.readLineSync()!);
+  stdout.write("Enter Value b : ");
+  b = int.parse(stdin.readLineSync()!);
   
-  int temp = a;
+  c = a;
   a = b;
-  b = temp;
-  print('After swapping: a = $a, b = $b\n');
+  b = c;
+
+
+  print("\nA : $a\nB : $b");
+
+  
 }
